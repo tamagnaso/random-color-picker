@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NZJ2JQW');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <title>Random Color Picker</title>
+
+        <!-- META -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tommaso Tamagnini (tom@random-color-picker.rf.gd)">
+        <meta name="description" content="An elegant random color picker.">
+        <meta name="copyright" content="Tommaso Tamagnini (tom@random-color-picker.rf.gd)">
+        <meta name="keywords" content="random colors, random color, colored rectangles, colored rectangle, random palette, flat palette, material palette, color picker, colors picker, random picker">
+        <meta name="robots" content="index, follow">
+        <meta name="revisit-after" content="1 month">
+        <meta charset="UTF-8">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+
+    <body onload="init()" class="unselectable">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZJ2JQW"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <canvas id="canvas">
+            This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+
+        <form id="colorsForm">
+            <select id="palettes">
+                <option value="random" selected="selected">Random palette</option>
+                <option value="flat">Flat palette</option>
+                <option value="material">Material palette</option>
+            </select>
+        </form>
+
+        <footer id="foot">
+            <div id="madeWithLove">Made with &#x1F49B in &#x1F1F8&#x1F1F2</div>
+            <div id="copyright">
+                <small>
+                    &copy; Copyright 2019-<script>document.write(new Date().getFullYear())</script>, <a href="https://www.instagram.com/tamagnaso/">@tamagnaso</a>
+                </small>
+            </div>
+        </footer>
+    </body>
+</html>
